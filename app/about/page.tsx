@@ -18,8 +18,9 @@ export default function About() {
                   learning and personal growth.
                 </p>
                 <p className="text-lg leading-relaxed text-muted-foreground mb-4">
-                  My experience spans brand representation, education support, and inventory management—each role has
-                  refined my communication skills, attention to detail, and ability to work effectively within teams.
+                  My experience spans film, television, and theatre productions, with roles ranging from supporting
+                  characters to lead performances. Each role has refined my craft and deepened my commitment to
+                  authentic, compelling performances.
                 </p>
                 <p className="text-lg leading-relaxed text-muted-foreground">
                   Fluent in four languages—IsiXhosa, IsiZulu, Sesotho, and English—I bring cultural authenticity and

@@ -1,8 +1,21 @@
+"use client"
+
 import { Navigation } from "@/components/navigation"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
+import { MessageCircle } from "lucide-react"
+import { useState } from "react"
 
 export default function Contact() {
+  const [showWhatsApp, setShowWhatsApp] = useState(true)
+
+  const handleWhatsAppClick = () => {
+    const phoneNumber = "27717191025"
+    const message = "Hi Siphesihle, I'd like to discuss a potential project with you."
+    const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`
+    window.open(whatsappURL, "_blank")
+  }
+
   return (
     <>
       <Navigation />
@@ -40,14 +53,12 @@ export default function Contact() {
                 <div>
                   <p className="text-sm uppercase tracking-wider text-muted-foreground mb-2">Social Media</p>
                   <div className="flex gap-6">
-                    <Link href="#" className="text-accent hover:underline">
-                      LinkedIn
-                    </Link>
-                    <Link href="#" className="text-accent hover:underline">
+                    <Link
+                      href="https://www.instagram.com/i_am_ngubembi/"
+                      target="_blank"
+                      className="text-accent hover:underline"
+                    >
                       Instagram
-                    </Link>
-                    <Link href="#" className="text-accent hover:underline">
-                      Twitter
                     </Link>
                   </div>
                 </div>
@@ -98,6 +109,16 @@ export default function Contact() {
           </div>
         </div>
       </div>
+
+      {showWhatsApp && (
+        <button
+          onClick={handleWhatsAppClick}
+          className="fixed bottom-8 right-8 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 z-40"
+          title="Contact via WhatsApp"
+        >
+          <MessageCircle className="w-6 h-6" />
+        </button>
+      )}
     </>
   )
 }

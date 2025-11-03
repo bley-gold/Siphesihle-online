@@ -45,7 +45,6 @@ export default function Home() {
                   alt="Siphesihle Mabona"
                   className="w-full h-full object-cover mix-blend-screen"
                 />
-                {/* Artistic color overlay effect */}
                 <div className="absolute inset-0 bg-gradient-to-r from-purple-600/20 via-pink-500/20 to-blue-600/20 pointer-events-none mix-blend-multiply"></div>
               </div>
               <div className="absolute -bottom-6 -right-6 w-48 h-48 bg-accent/5 rounded-sm -z-10"></div>
