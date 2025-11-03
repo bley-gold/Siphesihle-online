@@ -47,6 +47,19 @@ export default function Portfolio() {
         <div className="max-w-6xl mx-auto px-6 md:px-12">
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-12">Portfolio</h1>
 
+          <div className="mb-16">
+            <h2 className="text-3xl font-bold mb-6">Performance Reel</h2>
+            <div className="rounded-sm border border-border overflow-hidden bg-black">
+              <video controls className="w-full aspect-video bg-black" poster="/acting-performance.jpg">
+                <source
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Video%202025-11-03%20at%2013.51.20_a04d6f2a-aknr4LUbg5jA6usgcR7R6ltSFSNLLQ.mp4"
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+
           <div className="space-y-12">
             {theatreProductions.map((production, index) => (
               <div
