@@ -113,7 +113,8 @@ export default function Home() {
             <p>&copy; 2025 Siphesihle Mabona. All rights reserved.</p>
             <div className="flex gap-6">
              
-              <Link href="#" className="hover:text-accent transition">
+
+              <Link href="https://www.instagram.com/i_am_ngubembi/" className="hover:text-accent transition">
                 Instagram
               </Link>
            
