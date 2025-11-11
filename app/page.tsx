@@ -112,15 +112,11 @@ export default function Home() {
           <div className="max-w-6xl mx-auto flex flex-col md:flex-row md:items-center md:justify-between gap-4 text-sm text-muted-foreground">
             <p>&copy; 2025 Siphesihle Mabona. All rights reserved.</p>
             <div className="flex gap-6">
-              <Link href="#" className="hover:text-accent transition">
-                LinkedIn
-              </Link>
+             
               <Link href="#" className="hover:text-accent transition">
                 Instagram
               </Link>
-              <Link href="#" className="hover:text-accent transition">
-                Twitter
-              </Link>
+           
             </div>
           </div>
         </footer>

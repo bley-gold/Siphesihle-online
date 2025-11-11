@@ -2,25 +2,8 @@
 
 import { Navigation } from "@/components/navigation"
 import { Button } from "@/components/ui/button"
-import { generateCVPDF } from "@/app/actions/generate-cv"
 
 export default function Resume() {
-  const handleDownloadCV = async () => {
-    try {
-      const pdfBuffer = await generateCVPDF()
-      const blob = new Blob([pdfBuffer], { type: "application/pdf" })
-      const url = URL.createObjectURL(blob)
-      const link = document.createElement("a")
-      link.href = url
-      link.download = "Siphesihle_Mabona_CV.pdf"
-      document.body.appendChild(link)
-      link.click()
-      document.body.removeChild(link)
-      URL.revokeObjectURL(url)
-    } catch (error) {
-      console.error("Error generating PDF:", error)
-    }
-  }
 
   return (
     <>
@@ -29,12 +12,15 @@ export default function Resume() {
         <div className="max-w-6xl mx-auto px-6 md:px-12">
           <div className="flex items-center justify-between mb-12">
             <h1 className="text-5xl md:text-7xl font-bold tracking-tight">Resume</h1>
-            <Button
-              onClick={handleDownloadCV}
-              className="bg-accent hover:bg-accent/90 text-accent-foreground px-6 py-3 rounded-sm"
-            >
-              Download PDF
-            </Button>
+
+            <a href="/Siphesihle_Mabona_CV.pdf" download>
+              <Button
+                className="bg-accent hover:bg-accent/90 text-accent-foreground px-6 py-3 rounded-sm"
+              >
+                Download PDF
+              </Button>
+            </a>
+
           </div>
 
           <div className="space-y-16">

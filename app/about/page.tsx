@@ -35,7 +35,7 @@ export default function About() {
                   <div className="border-l-4 border-accent pl-6 py-4">
                     <h3 className="text-2xl font-bold mb-2">Theatre and Performing Arts</h3>
                     <p className="text-muted-foreground mb-2">Tshwane University of Technology</p>
-                    <p className="text-accent font-bold">2021 - Present</p>
+                    <p className="text-accent font-bold">2021 - 2024</p>
                   </div>
                   <div className="border-l-4 border-accent pl-6 py-4">
                     <h3 className="text-2xl font-bold mb-2">Secondary School</h3>
